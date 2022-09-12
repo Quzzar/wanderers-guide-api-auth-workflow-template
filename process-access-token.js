@@ -9,6 +9,7 @@ export function processAccessToken(code, state=null) {
     </div>
   `;
 
+  // Make POST request to Wanderer's Guide to get access token
   fetch(`https://wanderersguide.app/api/oauth2/token/?code=${code}&client_id=${import.meta.env.VITE_CLIENT_ID}`, {
     method: "post",
     headers: {
@@ -28,6 +29,7 @@ export function processAccessToken(code, state=null) {
     console.log("Success");
     console.log(data);
 
+    // Display result data
     document.querySelector('#result').innerHTML = `
       <div>
 
@@ -57,6 +59,7 @@ export function processAccessToken(code, state=null) {
       console.error(error);
     }
 
+    // Display error and status text
     document.querySelector('#result').innerHTML = `
       <div>
 

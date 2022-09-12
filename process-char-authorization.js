@@ -15,6 +15,7 @@ export function processCharAuth(charID=null) {
     </div>
   `;
 
+  // If 'char_id' query parameter exists, set character ID input to default to that char_id.
   if(charID){
     document.querySelector('#character-id').value = charID+'';
   }
