@@ -1,9 +1,11 @@
+import './loader.css'
+
 export function processAccessToken(code, state=null) {
   
-  // Display loading gif
+  // Display loading bars
   document.querySelector('#result').innerHTML = `
     <div>
-      <img src="loading.gif" alt="Loading" />
+      <div class="lds-bars"><div></div><div></div><div></div></div>
     </div>
   `;
 
