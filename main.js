@@ -16,7 +16,7 @@ if(code){
 
   let charID = params.get("char_id");
 
-  processCharAuth(charID); // her
+  processCharAuth(charID);
 
 }
 
