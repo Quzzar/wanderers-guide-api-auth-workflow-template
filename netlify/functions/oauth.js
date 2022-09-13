@@ -16,7 +16,7 @@ export const handler = async (event) => {
 	const oauth = characterAuthClient(characterId);
 
 	const authorizationURI = oauth.authorizeURL({
-		redirect_uri: `${process.env.BASE_URL}/.netlify/functions/oauthCallback`,
+		redirect_uri: `${process.env.VITE_BASE_URL}/.netlify/functions/oauthCallback`,
 		state: process.env.WG_AUTH_STATE,
 	});
 

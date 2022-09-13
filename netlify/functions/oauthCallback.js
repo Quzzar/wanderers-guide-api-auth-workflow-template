@@ -34,7 +34,7 @@ export const handler = async (event) => {
 		return {
 			statusCode: 302,
 			headers: {
-				Location: `${process.env.BASE_URL}?${queryArr.join('&')}`,
+				Location: `${process.env.VITE_BASE_URL}?${queryArr.join('&')}`,
 				'Cache-Control': 'no-cache',
 			},
 			body: 'redirecting to application...',

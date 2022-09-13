@@ -10,6 +10,7 @@ export function processCharAuth(charID = null) {
 			</div>
 		</div>
 	`;
+	console.log(import.meta.env);
 
 	// If 'char_id' query parameter exists, set character ID input to default to that char_id.
 	if (charID) {
@@ -21,7 +22,7 @@ export function processCharAuth(charID = null) {
 		const characterId = document.querySelector('#character-id')?.value;
 		if (!characterId) return;
 		location.href = `${
-			import.meta.env.BASE_URL
+			import.meta.env.VITE_BASE_URL
 		}/.netlify/functions/oauth?characterId=${characterId}`;
 	});
 }
