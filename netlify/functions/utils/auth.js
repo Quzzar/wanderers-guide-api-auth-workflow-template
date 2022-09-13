@@ -1,5 +1,6 @@
 import { AuthorizationCode } from 'simple-oauth2';
 
+// based on https://github.com/netlify/explorers/blob/main/functions/util/oauth.js
 function createAuthClient(credentials) {
 	if (!credentials.client.id || !credentials.client.secret) {
 		throw new Error('Missing a valid Wanderers Guide OAuth client ID and secret.');

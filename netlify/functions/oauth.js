@@ -17,7 +17,7 @@ export const handler = async (event) => {
 
 	const authorizationURI = oauth.authorizeURL({
 		redirect_uri: `${process.env.BASE_URL}/.netlify/functions/oauthCallback`,
-		state: process.env.WG_AUTH_STATE, // this is recommended:`url=${url}&csrf=${csrfToken}`,
+		state: process.env.WG_AUTH_STATE,
 	});
 
 	return {
