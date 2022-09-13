@@ -12,7 +12,7 @@ There are various sites like Netlify, you could probably use GitHub pages w/ act
 
 1. Clone the repo:
    ```
-   git clone https://github.com/Quzzar/Wanderers-Guide.git
+   git clone https://github.com/Quzzar/wanderers-guide-api-auth-workflow-template.git
    ```
 
 1. Within the main project folder, install dependencies:
