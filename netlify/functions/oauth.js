@@ -23,7 +23,7 @@ export const handler = async (event) => {
 	return {
 		statusCode: 302,
 		headers: {
-			Location: `${authorizationURI}/${characterId}?response_type='code'`,
+			Location: `${authorizationURI}?response_type='code'`,
 			'Cache-Control': 'no-cache',
 		},
 		body: 'redirecting to authorization...',
