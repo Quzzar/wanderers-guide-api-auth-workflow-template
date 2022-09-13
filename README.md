@@ -45,9 +45,9 @@ There are various sites like Netlify, you could probably use GitHub pages w/ act
    Add the following environment variables, referencing the values you just generated on Wanderer's Guide.
 
    ```env
-   VITE_API_KEY = <your API key>
-   VITE_CLIENT_ID = <your client ID>
-   VITE_AUTH_STATE = <optional string, see WGs API docs>
+   WG_API_KEY = <your API key>
+   WG_CLIENT_ID = <your client ID>
+   WG_AUTH_STATE = <optional string, see WGs API docs>
    BASE_URL = <the base URL of your netlify project (ex. https://my-site.netlify.app)>
    ```
 
