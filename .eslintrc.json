@@ -1,0 +1,23 @@
+{
+	"env": {
+		"browser": false,
+		"es2021": true
+	},
+	"root": true,
+	"ignorePatterns": ["node_modules", "dist", "coverage"],
+	"extends": ["airbnb-base", "eslint:recommended", "plugin:prettier/recommended"],
+	"parserOptions": {
+		"ecmaVersion": 13,
+		"sourceType": "module"
+	},
+	"globals": {
+		"process": true
+	},
+	"rules": {
+		"no-restricted-syntax": 0,
+		"no-useless-constructor": 0,
+		"class-methods-use-this": 0,
+		"import/prefer-default-export": 0
+	},
+	"settings": {}
+}
